@@ -1,0 +1,54 @@
+@import"./component/vaiable";
+@import"./component/mixin";
+
+header{
+    display: flex;
+    background: $heading-nave;
+}
+ul{
+    display: flex;
+    width: 100%;
+    @include center;
+    li{
+       display: flex;
+        a{
+         padding: 32px;
+         color: $color-p-nav;
+         @include text-nav;
+        }
+        text-decoration: none;
+    }
+}
+.logo img{
+    @include img-nav;
+}
+.container img{
+    @include imge-contain;
+}
+.card{
+    gap: 20px;
+    display: flex;
+    @include center;
+    
+}
+.card1{
+    position: relative;
+    top: -170px;
+    background: teal;
+    width: 200px;
+    height: 170px;
+}
+.line{
+    padding: 20px;
+    background: $color-line;
+    position: relative;
+    top: -174px;
+    p{
+        @include center;
+        @include font-pn;
+    }
+}
+.main-contain{
+    @include font-pn;
+    @include heading;
+}
